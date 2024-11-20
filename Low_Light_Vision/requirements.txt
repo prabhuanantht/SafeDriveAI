@@ -1,0 +1,7 @@
+plaintext
+tensorflow==2.10.0
+keras==2.10.0
+opencv-python==4.8.0.76
+matplotlib==3.8.0
+numpy==1.23.5
+huggingface-hub==0.17.1

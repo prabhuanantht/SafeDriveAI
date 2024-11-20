@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Console for Ananth</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css">
+    <style>
+        /* Starry background with 3D movement */
+        body {
+            margin: 0;
+            overflow: hidden;
+            height: 100vh;
+            background: black;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+
+        #stars {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: url('https://i.imgur.com/McV6dIK.png') repeat;
+            animation: moveStars 50s linear infinite;
+        }
+
+        @keyframes moveStars {
+            from { transform: translateX(0) translateY(0); }
+            to { transform: translateX(-100%) translateY(-100%); }
+        }
+
+        /* Console container */
+        .console-container {
+            position: relative;
+            max-width: 900px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.8);
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.9);
+        }
+
+        /* Tab buttons */
+        .tabs {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+        }
+
+        .tabs button {
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+            border: none;
+            padding: 15px;
+            margin: 5px;
+            cursor: pointer;
+            text-align: left;
+            transition: 0.3s;
+        }
+
+        .tabs button:hover {
+            background: rgba(255, 255, 255, 0.3);
+        }
+
+        .tabs button.active {
+            background: rgba(255, 255, 255, 0.6);
+        }
+
+        /* Section content */
+        .tab-content {
+            display: none;
+            padding: 20px;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        /* Sliders and list */
+        .slider-label {
+            font-size: 1.2rem;
+        }
+
+        .list-group-item {
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+            border: none;
+            margin-bottom: 10px;
+        }
+
+        .list-group-item:hover {
+            background: rgba(255, 255, 255, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <div id="stars"></div>
+
+    <div class="console-container">
+        <h2 class="text-center">Welcome to Ananth's Car Console</h2>
+        <div class="tabs">
+            <button class="tab-button active" data-tab="seat-settings">Seat Settings</button>
+            <button class="tab-button" data-tab="music">Music Playlist</button>
+            <button class="tab-button" data-tab="climate-control">Climate Control</button>
+        </div>
+        <div id="seat-settings" class="tab-content active">
+            <h4>Seat Settings</h4>
+            <label for="height" class="slider-label">Height</label>
+            <input type="range" id="height" min="0" max="20" value="10" class="form-range">
+            <label for="recline" class="slider-label">Recline</label>
+            <input type="range" id="recline" min="0" max="15" value="5" class="form-range">
+        </div>
+        <div id="music" class="tab-content">
+            <h4>Music Playlist</h4>
+            <ul id="playlist" class="list-group">
+                <!-- Songs will be dynamically added here -->
+            </ul>
+            <input type="text" id="newSong" class="form-control mt-3" placeholder="Add new song">
+            <button id="addSong" class="btn btn-primary mt-2">Add Song</button>
+        </div>
+        <div id="climate-control" class="tab-content">
+            <h4>Climate Control</h4>
+            <label for="temperature" class="slider-label">Temperature</label>
+            <input type="range" id="temperature" min="16" max="30" value="22" class="form-range">
+        </div>
+    </div>
+
+    <script>
+        // Tab functionality
+        const tabs = document.querySelectorAll('.tab-button');
+        const tabContents = document.querySelectorAll('.tab-content');
+
+        tabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                // Remove active class from all tabs and contents
+                tabs.forEach(t => t.classList.remove('active'));
+                tabContents.forEach(c => c.classList.remove('active'));
+
+                // Add active class to clicked tab and corresponding content
+                tab.classList.add('active');
+                document.getElementById(tab.dataset.tab).classList.add('active');
+            });
+        });
+
+        // Seat settings auto-save
+        async function saveSeatSettings() {
+            const height = document.getElementById('height').value;
+            const recline = document.getElementById('recline').value;
+            console.log(`Seat Settings - Height: ${height}, Recline: ${recline}`);
+        }
+
+        document.getElementById('height').addEventListener('input', saveSeatSettings);
+        document.getElementById('recline').addEventListener('input', saveSeatSettings);
+
+        // Climate control auto-save
+        async function saveTemperature() {
+            const temperature = document.getElementById('temperature').value;
+            console.log(`Temperature set to ${temperature}`);
+        }
+
+        document.getElementById('temperature').addEventListener('input', saveTemperature);
+
+        // Playlist functionality
+        const playlist = document.getElementById('playlist');
+        const newSongInput = document.getElementById('newSong');
+        const addSongButton = document.getElementById('addSong');
+
+        function addSong(songName) {
+            const li = document.createElement('li');
+            li.className = 'list-group-item';
+            li.textContent = songName;
+            li.onclick = () => playlist.removeChild(li);
+            playlist.appendChild(li);
+        }
+
+        addSongButton.addEventListener('click', () => {
+            const songName = newSongInput.value.trim();
+            if (songName) {
+                addSong(songName);
+                newSongInput.value = '';
+            }
+        });
+    </script>
+</body>
+</html>
