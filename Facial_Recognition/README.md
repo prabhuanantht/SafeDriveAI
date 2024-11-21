@@ -32,8 +32,8 @@ Coming soon! (Consider adding a GIF or video here to show the project in action.
 
 1. **Clone the Repository**
    ```bash
-   git clone https://github.com/your-username/face-authentication.git
-   cd face-authentication
+   git clone https://github.com/prabhuanantht/SafeDriveAI.git
+   cd SafeDriveAI/Facial_Recognition
    ```
 
 2. **Install Required Dependencies**
