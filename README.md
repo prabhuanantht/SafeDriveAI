@@ -72,7 +72,6 @@ Each model has been rigorously tested to ensure reliability in real-world scenar
 | Low Light Vision           | MIRNet from Hugging Face                               | 75% clearence          |
 | Traffic Sign Detection     | YOLOv5                                                 | 96%          |
 
-(*Replace XX% with the respective accuracy values after testing.*)
 
 ---
 
