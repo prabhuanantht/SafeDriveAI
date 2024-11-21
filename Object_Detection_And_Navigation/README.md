@@ -19,23 +19,16 @@ This project is an advanced obstacle detection and navigation system that utiliz
 
 Follow these steps to set up and run the project:
 
-1. **Clone the Repository**
+1. **Install Dependencies** Make sure you have Python 3.x installed. Install the required Python packages using:
 
    ```sh
-   git clone <repository-url>
-   cd <repository-directory>
+   pip install -r requirements.txt
    ```
 
-2. **Install Dependencies** Make sure you have Python 3.x installed. Install the required Python packages using:
+2. **Run the Navigation Script** To start the obstacle detection and navigation, execute the Python script:
 
    ```sh
-   pip install torch opencv-python numpy
-   ```
-
-3. **Run the Navigation Script** To start the obstacle detection and navigation, execute the Python script:
-
-   ```sh
-   python navigation_final.py
+   python Object_Detection_And_Navigation.py
    ```
 
 ## How It Works
@@ -97,35 +90,3 @@ The navigation commands are highly customizable, allowing developers to add hard
 - **SLAM Integration**: Add Simultaneous Localization and Mapping (SLAM) capabilities to create maps of unknown environments and navigate more autonomously.
 - **Voice Commands**: Allow voice-based commands for manual control of the vehicle or robot in conjunction with autonomous navigation.
 - **Adaptive Speed Control**: Introduce adaptive speed control where the vehicle can automatically adjust its speed based on obstacle distance and type, ensuring safe navigation.
-
-## Contributing
-
-We welcome contributions from the community! Whether it's adding new features, fixing bugs, or enhancing documentation, your input is valuable. Feel free to open an issue or submit a pull request.
-
-### How to Contribute
-
-1. Fork the repository.
-2. Create a new branch (`git checkout -b feature-branch-name`).
-3. Commit your changes (`git commit -m 'Add some feature'`).
-4. Push to the branch (`git push origin feature-branch-name`).
-5. Open a pull request.
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
-## Acknowledgments
-
-- **Ultralytics YOLOv5**: Thanks to the Ultralytics team for creating and maintaining the YOLOv5 model, which makes real-time object detection accessible.
-- **OpenCV Community**: A big thank you to the OpenCV community for providing such a comprehensive and easy-to-use library for computer vision.
-- **PyTorch**: Gratitude to the PyTorch team for building a flexible deep learning framework that powers this project.
-
-## Contact
-
-For any questions, suggestions, or feedback, please feel free to reach out:
-
-- **Email**: [[your-email@example.com](mailto\:your-email@example.com)]
-- **LinkedIn**: [Your LinkedIn Profile](https://www.linkedin.com/in/your-profile)
-- **GitHub**: [Your GitHub Profile](https://github.com/your-username)
-
-We look forward to hearing from you and collaborating to make this project even better!
