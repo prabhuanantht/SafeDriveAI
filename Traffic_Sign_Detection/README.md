@@ -126,6 +126,7 @@ This project trains a YOLOv5 model to detect traffic signs in images using a cus
 ## Output
 The trained YOLOv5 model detects traffic signs, including **traffic lights, speed limits, crosswalks, and stop signs**, with predictions visualized on sample and custom images.
 
+https://github.com/user-attachments/assets/d8620b53-d981-4a44-aa5a-65635fedf1e2
 ---
 
 ### Notes
