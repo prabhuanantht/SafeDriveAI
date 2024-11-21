@@ -43,7 +43,7 @@ To set up the project locally for development and testing:
 2. Install `cmake` on your system.
 
 ## Running the Application
-
+After cloning the repo, 
 1. Navigate to the project directory:
     ```bash
     cd Real-Time-Drowsiness-Detection-System
@@ -75,7 +75,7 @@ To set up the project locally for development and testing:
     - On Windows, ensure `cmake` is installed and restart the terminal.
 5. Run the application:
     ```bash
-    python Real-Time-Drowsiness-Detection-System.py --shape-predictor shape_predictor_68_face_landmarks.dat --alarm Alert.wav
+    python Drowsiness_Detection.py
     ```
 
 ## Algorithm
