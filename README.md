@@ -82,7 +82,7 @@ Each model has been rigorously tested to ensure reliability in real-world scenar
 ### 1️⃣ **Clone the Repository**
 ```bash
 git clone https://github.com/prabhuanantht/SafeDriveAI.git
-cd safe-drive
+cd SafeDriveAI
 ```
 
 ## ⚡ **Performance Metrics and Efficiency**
