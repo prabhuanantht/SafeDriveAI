@@ -18,7 +18,7 @@ This project is a Python-based voice-command system that recognizes spoken comma
 1. **Python Version**: Ensure you have Python 3.7 or higher.
 2. **Dependencies**: Install the following Python libraries:
    ```bash
-   pip install gensim speechrecognition
+   pip install -r requirements.txt
    ```
 3. **Microphone**: A working microphone for capturing live audio input.
 4. **Internet Connection**: Required for the Google Speech Recognition API and downloading the Word2Vec model.
@@ -39,7 +39,7 @@ After cloning the repository:
 
 3. **Run the Script**:
    ```bash
-   python voice_command_model.py
+   python Speech_Recognition.py
    ```
 
 ---
@@ -87,25 +87,8 @@ After cloning the repository:
 
 ---
 
-## Troubleshooting
-
-- **Audio Not Recognized**:
-  - Ensure your microphone is working and not muted.
-  - Reduce background noise for better recognition.
-  
-- **Command Not Found**:
-  - If the command is semantically far from the predefined list, it may not match.
-
-- **Google Speech Recognition Error**:
-  - Check your internet connection.
-  - Retry after some time as the API may face temporary issues.
-
----
-
 ## Future Enhancements
 
 - Add support for custom commands.
 - Integrate natural language understanding for more complex interactions.
 - Add GUI or voice feedback for better user experience.
-
----
