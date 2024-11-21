@@ -42,22 +42,24 @@ Coming soon! (Consider adding a GIF or video here to show the project in action.
    pip install -r requirements.txt
    ```
 
-3. **Add Pre-trained Model**
-   Ensure the `face_authentication_model.pkl` file is in the project directory.
 
 ## 🚀 Usage
 
 1. **Prepare an Input Image**
-   Place an image in the project directory, e.g., `mypic.jpg`.
+   Place the training set images in a folder in the path `face-recognition-dataset/Original Images/Original Images`
 
 2. **Run the Authentication Script**
-   Execute `facerec.py` with the required paths:
+   Execute `train_face_auth.py` with the required paths for training:
    ```bash
-   python facerec.py
+   python train_face_auth.py
    ```
-   - The script allows you to specify paths for `model_path` and `image_path`.
+   
+3. **Set the model path and run the `test_cam_live.py` to recognise the face:
+  ```bash
+   python test_cam_live.py
+   ```
 
-3. **View Results**
+4. **View Results**
    The output displays the image with bounding boxes around detected faces, labeled with the recognized identities.
 
 ## 🧩 Dependencies
@@ -71,18 +73,19 @@ The project requires the following Python packages:
 
 To install them, run:
 ```bash
-pip install face_recognition joblib numpy opencv-python matplotlib
+pip install -r requirements.txt
 ```
 
 ## 🔧 Configuration
 
-- **Model Path**: Modify `model_path` in `facerec.py` to point to the KNN model file.
-- **Image Path**: Update `image_path` to specify the location of your input image file.
+- **Dataset Path**: Modify `DIR_PATH` in `train_face_auth.py` to point to the Dataset folder.
+- **Model Path**: Update `model` in `test_cam_live.py` to specify the location of your trained model.
 - **Threshold Adjustment**: Adjust the `threshold` parameter in `predict_identity` for tuning authentication sensitivity.
 
-## 🛠 Troubleshooting
 
-- **Model Not Loading**: Verify the file path for the KNN model file.
-- **No Faces Detected**: Ensure that the input image contains visible faces; consider adjusting lighting or resolution.
-- **Misidentification**: Tweak the `threshold` to balance authentication accuracy.
+## 🌱 Future Enhancements
+
+- **Real-Time Video Authentication**: Expand functionality to allow face authentication in live video streams.
+- **Optimized Model Training**: Incorporate additional encodings and improve KNN model accuracy.
+- **Web or Mobile Interface**: Develop a web or mobile app for broader accessibility.
 
