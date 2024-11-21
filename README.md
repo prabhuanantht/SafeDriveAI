@@ -124,6 +124,3 @@ cd SafeDriveAI
 - Scalable design to support:
   - **Larger datasets** with increased computational resources.
   - Integration with future AI-powered features for next-gen automotive tech.
-
----
-
