@@ -117,15 +117,15 @@ pip install torchaudio librosa matplotlib seaborn scikit-learn tensorboard
 
 ---
 
-## **Results**
-### **Sample Outputs**
+## **Images**
+### **Feature Extraction**
 #### 1.![mfccsample1](https://github.com/user-attachments/assets/83bdc3e7-55d0-4a44-83bb-d71b834a2265)
 
 
 #### 2.![mfccsample2](https://github.com/user-attachments/assets/d6412747-fac4-4496-b1bd-802b3dea3fba)
 
 
-#### 2. ![mfccsample3](https://github.com/user-attachments/assets/2e1fdbac-9b12-435f-9dac-1b20cfc35449)
+#### 3. ![mfccsample3](https://github.com/user-attachments/assets/2e1fdbac-9b12-435f-9dac-1b20cfc35449)
 
 ---
 
