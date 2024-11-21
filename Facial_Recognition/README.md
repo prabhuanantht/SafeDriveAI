@@ -86,16 +86,3 @@ pip install face_recognition joblib numpy opencv-python matplotlib
 - **No Faces Detected**: Ensure that the input image contains visible faces; consider adjusting lighting or resolution.
 - **Misidentification**: Tweak the `threshold` to balance authentication accuracy.
 
-## 🌱 Future Enhancements
-
-- **Real-Time Video Authentication**: Expand functionality to allow face authentication in live video streams.
-- **Optimized Model Training**: Incorporate additional encodings and improve KNN model accuracy.
-- **Web or Mobile Interface**: Develop a web or mobile app for broader accessibility.
-
-## 📝 License
-
-This project is licensed under the MIT License – see the `LICENSE` file for details.
-
----
-
-This template should make your project accessible, clear, and professional for hackathon reviewers and contributors. Let me know if you'd like more customization!
