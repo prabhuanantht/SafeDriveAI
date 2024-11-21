@@ -37,7 +37,7 @@ This project uses the MIRNet model from Hugging Face to enhance low-light images
 
 2. Run the script:
    ```bash
-   python mirnet_enhancement.py
+   python Low_Light_Vision.py
    ```
 
 3. The enhanced image will be saved to the specified output path and displayed for comparison.
@@ -45,7 +45,8 @@ This project uses the MIRNet model from Hugging Face to enhance low-light images
 ## Example
 
 Original vs Enhanced Image:
-![Example](example.png)
+![GTA5](https://github.com/user-attachments/assets/1bd75d9e-e2bb-4d14-8a61-651c3c441f7d)
+
 
 ## Notes
 
