@@ -1,4 +1,4 @@
-# Safe Drive: An ML-Powered Driver Safety System
+# Safe Drive: An ML-Powered Driver Assistance System
 
 Safe Drive is an advanced machine learning-powered system designed to ensure driver safety and enhance the driving experience. This comprehensive solution integrates multiple AI-driven models, each tailored to address specific aspects of driver safety and personalization.
 
