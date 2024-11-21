@@ -76,6 +76,11 @@ Follow these steps to set up and run the project:
 
 The navigation commands are highly customizable, allowing developers to add hardware-specific control logic to connect with actual robotic or car systems.
 
+## Demonstration
+
+https://github.com/user-attachments/assets/5b370e44-a53a-4ddb-b885-51f627d225b3
+
+
 ## Customization Options
 
 - **Hardware Integration**: The `move_left()`, `move_right()`, `move_forward()`, and `stop()` functions can be adapted to send control signals to your robot or car hardware. This can be done using GPIO pins, motor controllers, or other communication protocols suitable for automotive systems.
