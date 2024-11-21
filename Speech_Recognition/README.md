@@ -1,4 +1,5 @@
-# Voice Command Model with Word2Vec and Speech Recognition
+# Voice-Activated Intelligent Command System
+
 
 This project is a Python-based voice-command system that recognizes spoken commands and performs predefined actions. The model uses the Word2Vec embeddings to find semantically similar commands and integrates the Google Speech Recognition API for live audio input.
 
