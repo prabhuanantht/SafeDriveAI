@@ -10,9 +10,7 @@ Welcome to the **Face Authentication Model**, that leverages the power of the K-
 - [Usage](#usage)
 - [Dependencies](#dependencies)
 - [Configuration](#configuration)
-- [Troubleshooting](#troubleshooting)
 - [Future Enhancements](#future-enhancements)
-- [License](#license)
 
 ## 🔍 About the Project
 
