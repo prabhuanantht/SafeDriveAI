@@ -65,6 +65,11 @@ Safe Drive integrates multiple AI models, many of which rely on **object detecti
    - **Object Detection**: Utilizes **YOLOv5** for high-speed detection of traffic signs.  
    - 📁 Folder: `Traffic_Sign_Detection/`  
 
+### 8. **Advanced Headlight System** 💡  
+   - 🚗 Enhances road safety by dynamically controlling headlight beams to prevent glare.  
+   - **Object Detection:** Detects vehicles using a trained TensorFlow model.  
+   - **Hardware Integration:** Arduino-controlled LED matrix for adaptive lighting.  
+   - 📁 Folder: `Advanced_Headlight_System/`
 ---
 
 ## 📊 **Model Performance**
