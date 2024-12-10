@@ -78,7 +78,7 @@ Each model has been rigorously tested to ensure reliability in real-world scenar
 
 | **Feature**                | **Model/Architecture**                                     | **Accuracy** |
 |----------------------------|----------------------------------------------------------|--------------|
-| Voice Authentication       | Siamese Network (ResNet-18 Backbone + Attention)         | 82%          |
+| Voice Authentication       | Siamese Network (ResNet-18 Backbone + Attention)         | 85%          |
 | Facial Recognition         | KNN-based System                                        | 96%          |
 | Speech Recognition         | Word2Vec Embeddings                                    | 92.5%          |
 | Drowsiness Detection       | YOLOv5                                                 | 90%          |
